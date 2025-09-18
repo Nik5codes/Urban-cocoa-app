@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "nodenext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
+
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "sourceMap": true,
+    "declaration": false,              /* frontend dev: avoid emitting .d.ts for app */
+    "declarationMap": false,
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+
+    // Let TypeScript auto-load installed @types packages.
+    // Remove/omit "types" or set specific ones if you need to limit them.
+    // "types": []
+  },
+
+  // ensure your .ts/.tsx files are included; adjust if your files are at project root
+  "include": ["src", "main.tsx", "main.ts", "index.html"],
+  "exclude": ["node_modules", "dist"]
+}
